@@ -1,0 +1,14 @@
+# Copy this file to .env and set values in your deployment environment/tooling.
+# These are read by Spring via application.yaml placeholders.
+
+# Database (from devdiary_database container)
+POSTGRES_URL=jdbc:postgresql://localhost:5432/devdiary
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=devdiary
+POSTGRES_PORT=5432
+DB_DRIVER=org.postgresql.Driver
+
+# JWT
+DEV_DIARY_JWT_SECRET=replace-with-strong-secret
+DEV_DIARY_JWT_TTL_SECONDS=86400
